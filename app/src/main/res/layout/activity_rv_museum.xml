@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.museum.RvMuseumActivity">
+
+   <LinearLayout
+       android:id="@+id/linear_seacrh"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:padding="16dp"
+       android:orientation="horizontal">
+
+       <EditText
+           android:id="@+id/edt_museum_search"
+           android:layout_width="0dp"
+           android:layout_weight="1"
+           android:layout_marginEnd="5dp"
+           android:layout_height="wrap_content"/>
+
+       <Button
+           android:id="@+id/museum_btn_search"
+           android:layout_width="wrap_content"
+           android:layout_height="35dp"
+           android:textColor="@android:color/white"
+           android:textStyle="bold"
+           android:text="@string/cari"
+           android:background="@color/colorPink"/>
+
+   </LinearLayout>
+
+    <ListView
+        android:layout_below="@id/linear_seacrh"
+        android:id="@+id/lv_museum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/item_layout_museum"/>
+
+    <ProgressBar
+        android:id="@+id/progress_museum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>

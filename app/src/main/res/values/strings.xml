@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Tentang Indonesia</string>
+    <string name="batik_indonesia">Batik \nIndonesia</string>
+    <string name="museum_nindonesia">Museum \nIndonesia</string>
+    <string name="daerah_nindonesia">Daerah \nIndonesia</string>
+    <string name="info_covid_19_nindonesia">Info Covid-19 \nIndonesia</string>
+    <string name="lorem_ipsum">lorem ipsum tu keren banget tau ih sumpah banget keren lah pokoknya wkwkwk
+        iya gitula gatau mau ngomong apa,ya gitulah but the majority have suffered alteration in some form,
+        by injected humour, or randomised words which dont look even slightly believable.
+        If you are going to use a passage of Lorem Ipsum, you need to be sure there isnt anything embarrassing hidden in the middle of text. All the Lorem
+        Ipsum generators on the Internet tend to repeat predefined chunks as necessary.
+    </string>
+    <string name="name_batik">Abimanyu</string>
+    <string name="batik_image_detail">batik_image_detail</string>
+    <string name="filosofi_batik">Filosofi Batik</string>
+    <string name="kisaran_harga">Kisaran Harga</string>
+    <string name="nama_museum">Nama Museum</string>
+    <string name="provinsi">Provinsi</string>
+    <string name="kabupaten">Kabupaten</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="kelurahan">Kelurahan</string>
+    <string name="cari">Cari</string>
+    <string name="data_update_tanggal">Data Terbaru Pada :</string>
+    <string name="loading">. . . . .</string>
+    <string name="dki_jakarta">DKI JAKARTA</string>
+    <string name="sembuh">Sembuh</string>
+    <string name="meninggal">Meninggal</string>
+    <string name="dalam_perawatan">Dalam Perawatan</string>
+</resources>

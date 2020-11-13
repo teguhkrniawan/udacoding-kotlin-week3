@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.batik.DetailBatikActivity">
+
+    <FrameLayout
+        android:id="@+id/frame_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent">
+
+        <ImageView
+            android:id="@+id/detail_batik_image"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            tools:src="@color/colorOrange"
+            android:contentDescription="@string/batik_image_detail" />
+
+    </FrameLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:background="@drawable/bg_rounded"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/detail_batik_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Batik Abimanyu"
+                android:textStyle="bold"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/detail_batik_kota"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Asal Yokyakarta"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filosofi_batik"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:id="@+id/detail_batik_makna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="@string/lorem_ipsum"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:layout_marginTop="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/kisaran_harga"
+                android:textStyle="bold"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/detail_batik_harga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                tools:text="Rp.25.000 - Rp.50.000"
+                tools:ignore="UnusedAttribute" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</RelativeLayout>
