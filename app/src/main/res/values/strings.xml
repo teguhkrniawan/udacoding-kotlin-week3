@@ -14,10 +14,6 @@
     <string name="batik_image_detail">batik_image_detail</string>
     <string name="filosofi_batik">Filosofi Batik</string>
     <string name="kisaran_harga">Kisaran Harga</string>
-    <string name="nama_museum">Nama Museum</string>
-    <string name="provinsi">Provinsi</string>
-    <string name="kabupaten">Kabupaten</string>
-    <string name="kecamatan">Kecamatan</string>
     <string name="kelurahan">Kelurahan</string>
     <string name="cari">Cari</string>
     <string name="data_update_tanggal">Data Terbaru Pada :</string>
@@ -26,4 +22,10 @@
     <string name="sembuh">Sembuh</string>
     <string name="meninggal">Meninggal</string>
     <string name="dalam_perawatan">Dalam Perawatan</string>
+    <string name="nama_museum">Nama Museum</string>
+    <string name="museum_indonesia_keren_banget">Museum Indonesia keren Banget</string>
+    <string name="alamat">Alamat</string>
+    <string name="kabupaten">Kabupaten</string>
+    <string name="kecamatan">Kecamatan</string>
+    <string name="provinsi">Provinsi</string>
 </resources>

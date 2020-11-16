@@ -1,10 +1,12 @@
 package com.teguh.tentangindonesia.ui.museum
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.view.View
 import android.widget.Button
+import android.widget.Toast
 import com.google.gson.GsonBuilder
 import com.teguh.tentangindonesia.R
 import com.teguh.tentangindonesia.adapter.MuseumAdapter
@@ -75,14 +77,27 @@ class RvMuseumActivity : AppCompatActivity() {
         val adapter = MuseumAdapter(arrayListOf())
         adapter.setDataAgain(data!!)
         lv_museum.adapter = adapter
+        lv_museum.setOnItemClickListener { parent, view, position, id ->
+            val item = data[position]
+            val intent = Intent(this@RvMuseumActivity, DetailMuseumActivity::class.java)
+            intent.putExtra(EXTRA_DETAIL_MUSEUM, item)
+            startActivity(intent)
+        }
     }
 
     private fun showList(data: ArrayList<Museum>?) {
         val adapter = MuseumAdapter(data)
         lv_museum.adapter = adapter
+        lv_museum.setOnItemClickListener { parent, view, position, id ->
+            val item = data?.get(position)
+            val intent = Intent(this@RvMuseumActivity, DetailMuseumActivity::class.java)
+            intent.putExtra(EXTRA_DETAIL_MUSEUM, item)
+            startActivity(intent)
+        }
     }
 
     companion object {
         private const val TAG = "RvMuseumActivity"
+        const val EXTRA_DETAIL_MUSEUM = "extra_detail_museum"
     }
 }

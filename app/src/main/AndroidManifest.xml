@@ -12,9 +12,10 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".ui.covid.DetailCovidActivity"/>
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.museum.DetailMuseumActivity"></activity>
+        <activity android:name=".ui.covid.DetailCovidActivity" />
         <activity android:name=".ui.covid.CovidActivity" />
         <activity android:name=".ui.daerah.DaerahActivity" />
         <activity android:name=".ui.museum.RvMuseumActivity" />
