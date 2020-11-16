@@ -6,13 +6,13 @@ import android.widget.TextView
 import com.bumptech.glide.Glide
 import com.teguh.tentangindonesia.R
 import com.teguh.tentangindonesia.model.batikmodel.Batik
-import kotlinx.android.synthetic.main.activity_detail_batik.*
+import kotlinx.android.synthetic.main.activity_batik_detail.*
 
 class DetailBatikActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detail_batik)
+        setContentView(R.layout.activity_batik_detail)
 
         val itemBatik = intent.getParcelableExtra<Batik>(RvBatikActivity.EXTRA_BATIK_KEY)
 
@@ -25,7 +25,7 @@ class DetailBatikActivity : AppCompatActivity() {
             Glide.with(this)
                 .load(itemBatik.link_batik)
                 .placeholder(R.color.colorOrange)
-                .into(detail_batik_image)
+                .into(detail_batik_img)
             txtName.text = itemBatik.nama_batik
             txtKota.text = itemBatik.daerah_batik
             txtDeskripsi.text = itemBatik.makna_batik

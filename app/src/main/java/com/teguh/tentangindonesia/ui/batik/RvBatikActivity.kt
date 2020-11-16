@@ -42,10 +42,10 @@ class RvBatikActivity : AppCompatActivity() {
     }
 
     private fun showList(data: ArrayList<Batik>?) {
-        val adapter = BatikAdapter(data!!, object: BatikAdapter.OnItemClickListener{
-            override fun detailBatik(itemBatik: Batik) {
+        val adapter = BatikAdapter(data, object : BatikAdapter.OnItemClickListener{
+            override fun detailBatik(itemBatik: Batik?) {
                 val intent = Intent(this@RvBatikActivity, DetailBatikActivity::class.java)
-                intent.putExtra(EXTRA_BATIK_KEY, itemBatik)
+                intent.putExtra(RvBatikActivity.EXTRA_BATIK_KEY, itemBatik)
                 startActivity(intent)
             }
         })

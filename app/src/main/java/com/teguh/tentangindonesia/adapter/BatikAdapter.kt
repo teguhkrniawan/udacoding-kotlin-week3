@@ -10,7 +10,7 @@ import com.bumptech.glide.Glide
 import com.teguh.tentangindonesia.R
 import com.teguh.tentangindonesia.model.batikmodel.Batik
 
-class BatikAdapter(private val data: ArrayList<Batik>, private val itemClick: OnItemClickListener): RecyclerView.Adapter<BatikAdapter.MyViewHolder>() {
+class BatikAdapter(private val data: ArrayList<Batik>?, private val itemClick: OnItemClickListener): RecyclerView.Adapter<BatikAdapter.MyViewHolder>() {
 
     inner class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val txtName = itemView.findViewById<TextView>(R.id.item_batik_name)
@@ -24,17 +24,17 @@ class BatikAdapter(private val data: ArrayList<Batik>, private val itemClick: On
     }
 
     override fun getItemCount(): Int {
-        return data.size
+        return data?.size ?: 0
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
 
-        val item = data[position]
+        val item = data?.get(position)
 
-        holder.txtName.text = item.nama_batik
-        holder.txtDescription.text = item.makna_batik
+        holder.txtName.text = item?.nama_batik
+        holder.txtDescription.text = item?.makna_batik
         Glide.with(holder.itemView.context)
-            .load(item.link_batik)
+            .load(item?.link_batik)
             .placeholder(R.color.colorOrange)
             .into(holder.ivBatik)
 
@@ -45,7 +45,7 @@ class BatikAdapter(private val data: ArrayList<Batik>, private val itemClick: On
     }
 
     interface OnItemClickListener {
-        fun detailBatik (itemBatik: Batik)
+        fun detailBatik (itemBatik: Batik?)
     }
 
 }
